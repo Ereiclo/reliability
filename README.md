@@ -1,4 +1,4 @@
-# Escalabilidad I - Ing Soft II UTEC
+# Escalabilidad III - Ing Soft II UTEC
 
 ## Integrantes
 
