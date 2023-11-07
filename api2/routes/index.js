@@ -82,7 +82,7 @@ router.get("/get-anime/:id", async (req, res) => {
     }
   } catch (error) {
     console.log("fallo: ", error.message);
-    if (error?.response?.status == 429) {
+    if (error?.response?.status == 429 || breaker.opened) {
       if (breaker.opened) {
         console.log("CB abierto");
       }

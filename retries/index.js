@@ -72,21 +72,24 @@ const run = async () => {
           });
         })
         .catch((err) => {
-          console.log(`Retry Status ${message_details.offset}: FAILURE`);
-          producer
-            .send({
-              topic: topic_http,
-              messages: [{ value: message_details.value }],
-            })
-            .catch((err) => {
-              console.log(err);
-            });
+          console.log(
+            `Retry Status ${message_details.offset} (${err.response.status}): FAILURE`
+          );
+          if (err.response.status == 429)
+            producer
+              .send({
+                topic: topic_http,
+                messages: [{ value: message_details.value }],
+              })
+              .catch((err) => {
+                console.log(err);
+              });
         });
 
-      consumer.pause([{ topic }]);
+      consumer.pause([{ topic: topic_http }]);
 
       setTimeout(() => {
-        consumer.resume([{ topic }]);
+        consumer.resume([{ topic: topic_http }]);
       }, 1500);
     },
   });
