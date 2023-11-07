@@ -32,11 +32,7 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">localhost</stringProp>
           <stringProp name="HTTPSampler.port">3000</stringProp>
-<<<<<<< HEAD
           <stringProp name="HTTPSampler.path">/get-anime/3</stringProp>
-=======
-          <stringProp name="HTTPSampler.path">/list?name=dragonball</stringProp>
->>>>>>> ca4faca (updated break)
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
