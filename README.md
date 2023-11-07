@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistema de retries
 
 ## Descripción de servicios
@@ -34,3 +35,15 @@ Para ejecutar el programa, se deben ejecutar los siguiente comandos:
 export HOST_IP=$(ifconfig | grep -E "([0-9]{1,3}\.){3}[0-9]{1,3}" | grep -v 127.0.0.1 | awk '{ print $2 }' | cut -f2 -d: | head -n1)
 docker-compose up
 ```
+=======
+# Escalabilidad I - Ing Soft II UTEC
+
+## Integrantes
+
+- Eric Bracamonte 
+- Grover Ugarte
+- Jorge Nicho
+
+## Diagrama
+![](./arquitectura.png)
+>>>>>>> ca4faca (updated break)
