@@ -1,5 +1,4 @@
 {
-  "name": "temp2",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -7,6 +6,9 @@
     "devstart": "nodemon ./bin/www"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
+    "ip": "^1.1.8",
+    "kafkajs": "^2.2.4",
     "@libsql/client": "^0.3.5",
     "axios": "^1.5.1",
     "cookie-parser": "~1.4.4",
