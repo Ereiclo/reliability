@@ -6,6 +6,6 @@ const client = createClient({
   authToken: process.env.TURSO_AUTH_TOKEN,
 });
 
-await client.execute(
-       `delete from  "Data" where true`,
-    );
+await client.execute(`delete from "anime" where true`);
+
+// await client.execute('SELECT count(1) FROM "anime" WHERE id = 3');

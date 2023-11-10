@@ -49,7 +49,7 @@ const run = async () => {
       const exists = await anime_exists(message_details.value);
       if (exists) {
         console.log(
-          `Anime ${message_details.key} exists in database - No Retry`
+          `Anime ${message_details.value} exists in database - No Retry`
         );
         return;
       }
